@@ -40,6 +40,9 @@ You can create .resw files for any language by following steps,
 
 2. Add [default resource files](https://github.com/syncfusion/uwp-controls-localization-resource-files) of libraries you are using into `Resources` folder.
 
+**Note:**
+Consider you are using `SfDataGrid` control in your application. Then you need to copy and include `Syncfusion.SfGrid.UWP.Resources.resw` (since `SfDataGrid` present in `Syncfusion.SfGrid.UWP` library) file in your application under `Resources` folder. So, now you can know the key names and values of default strings used in `Syncfusion.SfGrid.UWP.dll` library.
+
 ![Include default resource file to the application](DefaultResourceFile.png)
 
 3. Now, right click `Resources` folder and select Add and then `New Item`. In `Add New Item wizard`, select the `Resources` File option and name the file name as `Syncfusion.SfGrid.UWP.Resources.<culture name>.resw`. For example, you have to give name as `Syncfusion.SfDataGrid.UWP.Resources.de.resw` for `German` culture. In the same way, add new resource files for other libraries used in your application.
